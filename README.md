@@ -126,21 +126,16 @@
   </div>
 
   <div id="surprise">
-    <img src="WhatsApp Image 2025-06-20 at 01.04.47.jpeg" alt="Tatlı bir sürpriz">
     <p>Bugün bir Giresun klasiği gibi; sade ama derin, tatlı ama abartısız bir gün… çünkü senin doğum günün 🌸
 
-Tekrar tekrar doğum günün kutlu olsun. Farklı ve güzel bir şey hazırlamak istedim. Umarım beğenirsin.
+Tekrar tekrar doğum günün kutlu olsun. Farklı ve güzel bir şey hazırlamak istedim. Umarım beğenirsin de.
 
-Bir de diğer konu... Fotoğrafı görünce “ne alaka?” dediğini duyar gibiyim. Bu, senden hoşlandığım dönemde çocuklara attığım bir mesajdı. Onlar da seni baya iyi tanıyor hahaha 😊
-
-Zaten başından beri biliyorsun sana olan hislerimi… o yüzden anlamlı ve farklı bir hediye vermek istedim.
+Zaten ilk baştan beri biliyorsun sana olan duygularımı, o yüzden anlamlı ve farklı bir hediye vermek istedim sana.
 
 Yeni yaşın sana en çok sevdiğin şeyleri getirsin…
 Mesela huzur, kahkaha, yanında seni gerçekten önemseyen birini.
 
-İyi ki doğdun, iyi ki varsın.
-
-Not: Bu küçük şeyin seni biraz olsun gülümsetmesi yeter bana 🙃</p>
+İyi ki doğdun, iyi ki varsın.</p>
   </div>
 
   <div class="footer">Giresun'dan minicup tadında bir sürprizle 💖</div>
