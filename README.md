@@ -9,11 +9,50 @@
       margin: 0;
       padding: 0;
       height: 100vh;
-      background: linear-gradient(to top, #4caf50, #a8e063);
       overflow: hidden;
-      position: relative;
       font-family: sans-serif;
+    }
+    /* Giriş ekranı */
+    #intro {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, #2e7d32, #81c784);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      z-index: 10;
+    }
+    #intro h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #enterBtn {
+      padding: 12px 24px;
+      background: #fff;
+      color: #2e7d32;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
       cursor: pointer;
+      transition: transform 0.3s;
+    }
+    #enterBtn:hover {
+      transform: scale(1.1);
+    }
+    /* Bahçe */
+    #garden {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, #4caf50, #a8e063);
+      position: relative;
+      cursor: pointer;
+      display: none;
     }
     .flower {
       position: absolute;
@@ -31,21 +70,38 @@
   </style>
 </head>
 <body>
+  <!-- Giriş ekranı -->
+  <div id="intro">
+    <h1>Çiçek Bahçesine Hoş Geldin 🌿</h1>
+    <button id="enterBtn">Bahçeye Gir</button>
+  </div>
+
+  <!-- Bahçe alanı -->
+  <div id="garden"></div>
+
   <script>
     const flowers = ["🌸", "🌼", "🌹", "🌷", "🌻"];
+    const intro = document.getElementById("intro");
+    const garden = document.getElementById("garden");
+    const enterBtn = document.getElementById("enterBtn");
 
-    document.body.addEventListener("click", (e) => {
+    // Giriş ekranından bahçeye geçiş
+    enterBtn.addEventListener("click", () => {
+      intro.style.display = "none";
+      garden.style.display = "block";
+    });
+
+    // Çiçek ekleme
+    garden.addEventListener("click", (e) => {
       const flower = document.createElement("div");
       flower.className = "flower";
       flower.textContent = flowers[Math.floor(Math.random() * flowers.length)];
       
-      // Konumlandırma
       flower.style.left = `${e.clientX - 10}px`;
       flower.style.top = `${e.clientY - 10}px`;
 
-      document.body.appendChild(flower);
+      garden.appendChild(flower);
 
-      // Sonsuza kadar kalmasın diye temizle
       setTimeout(() => {
         flower.remove();
       }, 5000);
